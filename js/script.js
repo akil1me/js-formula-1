@@ -29,16 +29,16 @@ if (isNaN(question3)) {
   elText.textContent = `${question1} ${question2}, siz qiymatni son shaklida berishingiz kerak `;
   elLink.textContent = "qayta urinib ko`ring";
 }
-else if (question3 < 18) {
-  elText.textContent = `${question1} ${question2}, sizni yoshingiz tug'ri kelmaydi uzur`;
+else if (question3 < 18 && question3 > 0) {
+  elText.textContent = `${question1} ${question2}, sizni yoshingiz ${question3}da, tug'ri kelmaydi uzur`;
   elLink.textContent = "qayta urinib ko`ring";
 }
 else if (question3 >= 18 && question3 <= 40) {
-  elText.textContent = `${question1} ${question2}, sizni yoshingiz bizni talabga tugri keladi, siz bilan yaqin orada a'loqaga chiqamiz`;
+  elText.textContent = `${question1} ${question2}, sizni yoshingiz ${question3}da, bizni talabga tugri keladi, siz bilan yaqin orada a'loqaga chiqamiz`;
   elLink.textContent = "qayta urinib ko`ring";
 }
 else if (question3 > 41) {
-  elText.textContent = `${question1} ${question2}, sizni yoshingiz bizni talabga tug'ri kelmadi, juda kattasiz uzur`;
+  elText.textContent = `${question1} ${question2}, sizni yoshingiz ${question3}da, bizni talabga tug'ri kelmadi, juda kattasiz uzur`;
   elLink.textContent = "qayta urinib ko`ring";
 }
 else if (question3 < 0) {
